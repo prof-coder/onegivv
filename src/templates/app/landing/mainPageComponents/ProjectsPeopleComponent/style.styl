@@ -1,0 +1,202 @@
+.projectsPeopleComponent
+    .sliderBody
+        width: 100%
+        max-width: 100%
+        .sliderWrapper
+            padding: 15px 0
+            .projectSlider, .charitySlider
+                height: 560px
+                .slick-slider
+                    .slick-prev
+                        left: 40px
+                        z-index: 999
+                        &:before
+                            content: ''
+                    .slick-next
+                        right: 15px
+                        &:before
+                            content: ''
+                    .controls
+                        top: 220px
+                    .prevControl
+                        z-index: 1
+                    .nextControl
+                        z-index: 1
+                    .slick-list
+                        padding: -25px -15px
+                        height: 540px
+                        .slick-track
+                            height: 540px
+                            // display: flex
+                            // flex-direction: row
+                            // flex-wrap: nowrap
+                            // align-items: stretch
+                            // width: 100% !important
+                            .slick-slide
+                                height: auto
+                                padding: 25px 15px
+                                li
+                                    .project
+                                        border-radius: 0
+                                        .project-activity-wrapper
+                                            .activity-wrapper
+                                                .summary
+                                                    > div
+                                                        justify-content: center
+                                                        .more
+                                                            button
+                                                                border-radius: 0
+                                        .project-preview
+                                            height: 175px
+                                            .project-cover
+                                                height: 175px
+                                            .gradientPreview
+                                                height: 175px
+                                    .charitySection
+                                        border-radius: 0
+                                        .headerPicture
+                                            height: 200px
+                                            .no-picture
+                                                height: 200px
+                                                .main-picture
+                                                    height: 200px
+                                                .gradient-overlay
+                                                    height: 200px
+                                        .profileInfo
+                                            .flex-wrapper
+                                                .label
+                                                    .line
+                                                        .name
+                                                            text-overflow: ellipsis
+                                                            white-space: nowrap
+                                                            overflow: hidden
+                                            .chairty-desc
+                                                p
+                                                    font-size: 14px
+                                                    line-height: 17px
+                                                    height: 68px
+                                                    text-overflow: ellipsis
+                                                    min-height: 68px
+                                                    white-space: pre-wrap
+                                                    overflow: hidden
+                                                    margin: 0
+            .charitySlider
+                height: 500px
+                .slick-slider
+                    .controls
+                        top: 170px
+                    .slick-list
+                        height: 490px
+                        .slick-track
+                            height: 490px
+
+    .project-scroll
+        ul
+            li
+                .project
+                    border-radius: 0
+                    .project-activity-wrapper
+                        .activity-wrapper
+                            .summary
+                                > div
+                                    justify-content: center
+                                    .more
+                                        button
+                                            border-radius: 0
+                    .project-preview
+                        height: 175px
+                        .project-cover
+                            height: 175px
+                        .gradientPreview
+                            height: 175px
+    .nonprofit-scroll
+        ul
+            li
+                .charitySection
+                    border-radius: 0
+                    .headerPicture
+                        height: 200px
+                        .no-picture
+                            height: 200px
+                            .main-picture
+                                height: 200px
+                            .gradient-overlay
+                                height: 200px
+                    .profileInfo
+                        .flex-wrapper
+                            .label
+                                .line
+                                    .name
+                                        text-overflow: ellipsis
+                                        white-space: nowrap
+                                        overflow: hidden
+                        .chairty-desc
+                            p
+                                font-size: 14px
+                                line-height: 17px
+                                height: 68px
+                                text-overflow: ellipsis
+                                min-height: 68px
+                                white-space: pre-wrap
+                                overflow: hidden
+                                margin: 0
+
+@media all and (max-width: 425px)
+    .projectsPeopleComponent
+        .sliderBody
+            .projectSlider
+                .slick-slider
+                    .slick-list
+                        .slick-track
+                            .slick-slide
+                                li
+                                    width: 100%
+                                    
+        .project-scroll
+            ul
+                li
+                    .project
+                        .project-activity-wrapper
+                            .activity-wrapper 
+                                .summary
+                                    height: 42px
+                                    .col-5
+                                        .total
+                                            p
+                                                font-size: 10px
+                                    .col-3
+                                        .current
+                                            p
+                                                margin-right: 0
+                                                font-size: 10px
+                                    .col-4
+                                        justify-content: flex-end
+                                        .more
+                                            button
+                                                border-radius: 0 !important
+                                                padding: 5px 10px !important
+
+@media all and (max-width: 576px)
+    .projectsPeopleComponent
+        .sliderBody
+            max-width: 540px
+
+@media all and (max-width: 768px)
+    .projectsPeopleComponent
+        .sliderBody
+            max-width: 720px
+	
+@media all and (max-width: 992px)
+    .projectsPeopleComponent
+        .sliderBody
+            max-width: 960px
+	
+@media all and (max-width: 1050px)
+    .projectsPeopleComponent
+        .sliderBody
+            max-width: 960px
+
+@media all and (max-width: 1200px)
+    .projectsPeopleComponent
+        .sliderBody
+            max-width: 1090px

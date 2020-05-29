@@ -1,0 +1,164 @@
+.sideMenubar
+    display none
+
+@media all and (max-width: 768px)
+    .sideMenubar
+        position absolute
+        flex-direction column
+        background rgba(255, 255, 255, 0.9);
+        mix-blend-mode normal
+        box-shadow 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius 0
+        transition transform .3s
+        transform translateX(202px)
+        width 200px
+        height 100vh
+        right 2px
+        top -22px
+        box-sizing border-box
+        padding 70px 20px 20px
+        overflow-y auto
+        &.open
+            display flex
+        .sidebarMenu
+            list-style none
+            margin 0
+            padding-left 30px
+            li
+                margin-bottom 10px
+        .submenu
+            opacity 0
+            visibility hidden
+            height auto
+            max-height 0
+            transition .3s
+            a
+                display block
+                margin-top 10px
+            &.open
+                opacity 1
+                visibility visible
+                max-height 1000px
+        .discoveryLink
+            margin 0 auto 10px
+            border: none
+            border-radius: 30px
+            background: linear-gradient(to right, $first-color 2.75%, $second-color 88.2%)
+            > span
+                color: #ffffff !important
+                font-size: 14px !important
+        .searchBox
+            position relative
+            margin-bottom 25px
+            .icon-button
+                position absolute
+                top 10px
+                left 10px
+            input
+                background #fff
+                box-shadow 0px 4px 4px rgba(0,0,0,0.25)
+                border-radius 30px
+                border none
+                outline none
+                font-size 12px
+                padding 11px 11px 11px 30px
+                width 100%
+                box-sizing border-box
+                &::placeholder
+                    color #9C9B9F
+        .auth-buttons
+            margin-bottom 25px
+            background linear-gradient(90deg,#1aaaff,#5eedfd) 0 100% no-repeat
+            background-size 100% 1px
+            padding 5px 0
+            display inline-flex
+            width 100%
+            .but-join
+                font-weight bold
+                text-decoration none
+                color #666666
+                width 50%
+                text-align center
+                .logout-img
+                    margin-right: 0
+                    width: 25px
+            p
+                margin: 0
+                font-size: 15px
+                font-weight: 700
+                line-height: 20px
+            .iconBody
+                height: 35px
+            a
+            .auth-btn
+                width 50%
+                text-align center
+                m-font(Roboto, normal, bold, normal, 14px)
+                color #666
+                text-decoration none
+                > div
+                    height: 35px
+                    .settings-img
+                        width: 26px
+                        height: auto
+                    .logout-img
+                        width: 20px
+                        height: auto
+            .btn-seperator
+                width 1px
+                background linear-gradient(180deg, $first-color 0%, $second-color 100%) right  bottom no-repeat
+        a
+            font-weight bold
+            text-decoration none
+            color #666666
+        .nav-link
+            .icon-button
+                .font-icon
+                    color $first-color
+                    font-size 28px
+                span
+                    margin-left 10px
+        .icon-button
+            span
+                margin-left 10px
+    .noti-icon
+        .notify-list
+            right: -80px
+            &:after
+                right: 81px
+    .wrapper
+        .toggleBlockForMenu
+            .hamburger
+                width: 20px
+                height: 20px
+            &.mobile
+                display: flex
+            &.desktop
+                display: none
+        .info-wrapper
+            .user	
+                margin-right: 20px				
+                width 20px
+                height 20px
+                pointer-events none
+                background-image url('/images/ui-icon/icon-profile.svg')
+                background-repeat round
+            .search				
+                margin-right: 20px
+                width 20px
+                height 20px
+                pointer-events none
+                background-image url('/images/ui-icon/search.svg')
+                background-repeat round
+    .desktop-view
+        display none !important
+    .mobile-view
+        display flex !important
+    .postCardModalBody
+        .modalContent
+            width: 100% !important
+            max-width: 100% !important
+            padding: 0 !important
+            .modalHeader
+                .closeBtn
+                    z-index: 999

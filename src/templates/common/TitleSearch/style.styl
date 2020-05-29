@@ -1,0 +1,50 @@
+.input-control-wrapper
+    display: flex
+    flex-direction: row
+    align-items: center
+    align-content: stretch
+    height: 38px
+    background-color: white
+    padding-right: 5px
+    margin-top: 5px
+    &.isOnlyMobile
+        display: none
+    .icon-search
+        flex-basis: 20px
+        color: #828282
+        background-color: white
+        // padding-right: 5px
+        order: 2              
+    .control
+        flex-basis: calc(100vh - 20px)        
+        border: none
+        color rgb(150, 150, 150)
+        text-indent: 10px
+        order: 1
+        &:focus
+            outline none
+
+@media all and (max-width: 425px)
+    .input-control-wrapper
+        &.isOnlyMobile
+            display: flex !important
+
+@media all and (max-width: 768px)
+    .input-control-wrapper
+        &.isOnlyMobile
+            display: flex !important
+
+@media (max-width: 575.98px)
+    .input-control-wrapper
+        &.isOnlyMobile
+            display: flex !important
+
+@media (min-width: 576px) and (max-width: 767.98px)
+    .input-control-wrapper
+        &.isOnlyMobile
+            display: flex !important
+
+@media (min-width: 768px) and (max-width: 1023.98px)
+    .input-control-wrapper
+        &.isOnlyMobile
+            display: flex !important

@@ -1,0 +1,181 @@
+.campaign-header
+    width 100%
+    m-flex(space-between)
+    ._title
+        m-flex(space-around)
+        span
+            m-font(Roboto, normal, bold, 23px, 20px)
+            color #979797
+        .DashNavLink
+            padding-left 10px
+            position: relative
+            .addIcon
+                cursor: pointer
+            .popup-menu
+                display none
+                position absolute
+                right -40px
+                background #fff
+                box-shadow 0px 4px 4px rgba(0, 0, 0, 0.25)
+                border-radius 3px
+                overflow hidden
+                top 22px
+                padding: 5px 0
+                width: 140px
+                z-index: 1
+                .submenu
+                    cursor: pointer
+                    padding 3px 10px
+                    color #666
+                    m-font(Roboto, normal, normal, 17px, 14px)
+                    text-align left
+                    background #fff
+                    &:hover
+                        background: #eee
+                    span
+                        margin-left: 5px
+                        font-size: 14px !important
+                        font-weight: normal
+                &.open
+                    display: block
+                    height: auto
+                    transition: .3s
+    .DashNavContainer
+        .DashNavLink
+            text-decoration none
+    .import-donations
+        padding: 30px 0px
+        .import-donations-content
+            border-radius: 8px;
+            border: 1px solid $first-color
+            padding: 0px 0px 0px 20px
+            display: flex
+            align-items center
+            color: #999999;
+            font-weight: normal;
+            ._label
+                flex: 6
+                font-size: 14px;
+            ._plus
+                flex: 1
+                font-size: 27px;
+                text-align: center
+                border-left: 1px solid $first-color
+                cursor: pointer
+            ._input
+                display: none
+        .bottom-box
+            display: flex;
+            justify-content: center
+            margin-top: 70px
+            .add-contact
+                ._label
+                    font-size: 14px
+                    font-weight: normal
+        .bottom-contact
+            m-font(Roboto, normal, normal, 17px, 14px)
+            color #666
+            text-align center
+            margin-top 50px
+        .contact-support
+            margin-top 20px
+            text-align center
+            color $first-color
+            m-font(Roboto, normal, normal, 17px, 14px)
+    .import-second
+        .modalHeader
+            margin: 20px 20px 0px;
+        .import-second-content 
+            display: flex;
+            flex-direction: column;
+            .column-titles
+                padding: 0px 40px
+            .action-buttons
+                display: flex
+                justify-content: space-evenly
+                padding-bottom: 35px
+            .import-table
+                margin: 20px 0px                
+                background: #FFFFFF;
+                box-shadow: 0px 10px 17px rgba(0, 0, 0, 0.06);
+                border-radius: 8px;
+                overflow: auto;
+                position: relative;
+                .header-select
+                    display: flex
+                    position: sticky;
+                    top: 0px;
+                    z-index: 1
+                    .select-column                        
+                        flex 1 0 25%
+                        span
+                            text-align: center
+                        div
+                            border-radius: 0px
+                            div
+                                flex: 1
+                                &:first-child
+                                    justify-content: flex-end;
+                .header                    
+                    background #FFFFFF
+                    padding 0px
+                    display flex
+                    position sticky
+                    top 34px
+                    box-shadow none
+                    &.have-title
+                        top: 0px
+                    .header-title
+                        padding 14px
+                        color #666666
+                        flex 1 0 25%
+                        font-size 12px
+                        text-align center
+                        box-sizing border-box
+                        border-bottom 1px solid #ddd
+                        border-top 1px solid #ddd
+                        box-shadow 0 10px 20px rgba(0, 0, 0, 0.1)
+                        &.border-right
+                            border-right 1px solid #ddd
+                        &.empty
+                            color #ddd
+                            font-style italic
+                .import-body
+                    height 340px
+                    .content-row
+                        display flex
+                        .content-column
+                            flex 1 0 25%
+                            height fit-content
+                            text-align center
+                            padding 5px 5px 0px
+                            box-sizing border-box
+                            font-size 14px
+                            color #333333
+                            &.border-right
+                                border-right 1px solid #DDDDDD
+                            &.active
+                                background #eee
+    .import-third
+        .content
+            display: flex
+            flex-direction: column
+            padding: 10px 50px;
+            .third-title
+                color: #666666;
+                font-size: 16px;
+                margin: 10px 0px                
+            .third-content
+                display: flex
+                flex-direction: column
+                label
+                    margin: 10px 0px
+            .action-buttons
+                display: flex
+                justify-content: space-evenly
+                margin-top: 30px
+                
+@media screen and (max-width: 768px)
+    .campaign-header
+        ._title
+            padding: 15px 0 0 15px

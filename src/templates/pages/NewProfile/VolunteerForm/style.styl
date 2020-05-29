@@ -1,0 +1,109 @@
+.volunteerFormSection
+    padding: 10px 15px 0 15px
+    .titleBody
+        display: flex
+        img
+            width: 30px
+            height: 30px
+            margin-right: 10px
+            vertical-align: middle
+        p
+            color: #20AFFF
+            font-size: 25px
+            font-weight: bold
+            line-height: 32px
+            margin: 0 0 15px 0
+    .row
+        padding: 20px 0
+        &.flex
+            display: flex
+            align-items: center
+            justify-content: space-between
+            p
+                margin-right: 15px
+                &.desc
+                    margin-left: 15px
+        &.timeRow
+            padding: 5px 0
+        &.p-t-0
+            padding-top: 0
+        &.p-t-10
+            padding-top: 10px
+        &.p-b-0
+            padding-bottom: 0
+        p
+            color: #000000
+            font-size: 15px
+            line-height: 21px
+            margin: 0 0 5px 0
+            &.title
+                font-weight: bold
+            &.desc
+                font-weight: normal
+            &.center
+                text-align: center
+            &.m-b-10
+                margin-bottom: 10px
+            &.timeTitle
+                margin-top: 10px
+                margin-bottom: 0
+        input
+            border: 2px solid #E0E0E0
+            font-size: 15px
+            line-height: 20px
+            padding: 10px 15px
+            width: 100%
+            &::placeholder
+                color: #4F4F4F
+        img
+            &.plusBtn
+                width: 60px
+                padding: 15px 0 5px 0
+                cursor: pointer
+        button
+            border-radius: 0
+            // padding: 13px 60px
+            span
+                font-size: 18px !important
+                font-weight: bold
+                line-height: 22px
+        &.eachAvailabilityTimeList
+            padding: 15px 20px
+            margin: 15px 0
+            position: relative
+            border: 1px solid #e0e0e0
+            box-shadow: 0px 1px 3px 3px rgba(0, 0, 0, 0.1)
+            &:first
+                padding: 5px 30px 0 0
+            .delete
+                height: 12px
+                width: 12px
+                position: absolute
+                right: 5px
+                cursor: pointer
+                top: 5px
+                background-size: cover
+                background-image: url(/images/ui-icon/close_modal.svg)
+        .customDatePickerWidth, 
+        .customDatePickerWidth > div.react-datepicker-wrapper, 
+        .customDatePickerWidth > div > div.react-datepicker__input-container
+        .customDatePickerWidth > div > div.react-datepicker__input-container input
+            width: 100px
+        .customDatePickerWidth
+            > div.react-datepicker-popper
+                > div.react-datepicker--time-only
+                    > div.react-datepicker__time-container
+                        width: 96px
+                        .react-datepicker__time
+                            .react-datepicker__time-box
+                                width: 85px
+                                ul.react-datepicker__time-list
+                                    li.react-datepicker__time-list-item
+                                        padding: 5px
+        .skillRequiredErrMsg
+            font-size: 12px
+            color: #ff4060
+            margin: 5px
+        .vol-form-input
+            &.hasErr
+                border: 2px solid #ff4060
